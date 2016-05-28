@@ -1,5 +1,6 @@
 #Content First Prototyping Project Base
-This is a bare bones project base for the Content First Prototyping framework. If you're looking for something with a wider selection of patterns, pages, and templates, please check out the [Content First Prototyping Starter Kit](https://github.com/andybywire/content-first-prototyping.git) instead.
+This is a bare bones project base for the Content First Prototyping framework. If this is the first page you’ve visited about content first prototyping, be sure to also check out the [Smashing Magazine article](https://www.smashingmagazine.com/2016/05/content-first-prototyping/) that introduces the framework, or the [Content First Prototyping Starter Kit](https://github.com/andybywire/content-first-prototyping) repository, which has a wider selection of patterns, pages, and templates.
+
 
 ##Dependancies
 
