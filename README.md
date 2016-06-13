@@ -26,6 +26,8 @@ This is a bare bones project base for the Content First Prototyping framework. I
 
         $ cd <path to your project folder>
 
+        $ bower install
+
         $ npm install
 
 4. Run `npm start`. Once installed, this is the only command you'll need to run to begin a new session. 
