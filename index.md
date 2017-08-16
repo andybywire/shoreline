@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-#Welcome to the Content First Prototyping Framework!
+# Welcome to the Content First Prototyping Framework!
 
 This is a bare bones version of the CFP Framework you can use to build your own content prototype up from scratch. This version includes:
 

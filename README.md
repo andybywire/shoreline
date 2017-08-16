@@ -1,15 +1,15 @@
-#Content First Prototyping Project Base
+# Content First Prototyping Project Base
 This is a bare bones project base for the Content First Prototyping framework. If this is the first page you’ve visited about content first prototyping, be sure to also check out the [Smashing Magazine article](https://www.smashingmagazine.com/2016/05/content-first-prototyping/) that introduces the framework, or the [Content First Prototyping Starter Kit](https://github.com/andybywire/content-first-prototyping) repository, which has a wider selection of patterns, pages, and templates.
 
 
-##Dependencies
+## Dependencies
 
 - [Command line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/) (if you’re on a Mac, this is probably already installed)
 - [Node.js](https://nodejs.org/en/)
 - [Bower](https://bower.io/#install-bower)
 
-##Installation
+## Installation
 
 1. Install the Jekyll gem and Gulp (use `sudo` if you see permission errors)
 
@@ -46,7 +46,7 @@ This is a bare bones project base for the Content First Prototyping framework. I
 
         $ npm start
 
-##Documentation
+## Documentation
 
 In order to get the most out of the framework, it's worth familiarizing yourself with the basics of the tools it's built with. The documentation of all of these tools is excellent and should get you up to speed quickly:
 
