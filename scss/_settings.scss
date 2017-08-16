@@ -43,29 +43,21 @@
 // 1. Global
 // ---------
 
-// Some color adjustments here for monochrome wireframes
-// Original Foundation 6 values are commented out after updated values
-
-$cool-gray-80: #667788; 
-$cool-gray-40: #D1D6DB; 
-$cool-gray-20: #EFF1F3; 
-
-
 $global-width: rem-calc(960);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: $cool-gray-80;
-$secondary-color: $cool-gray-20;   //#777;
+$primary-color: #1779ba;
+$secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: $cool-gray-20;        //#e6e6e6;
-$medium-gray: $cool-gray-40;       //#cacaca;
-$dark-gray: $cool-gray-40;         //#8a8a8a;
-$black: $cool-gray-80;             //#0a0a0a;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
 $white: #fefefe;
 $body-background: #fefefe;
-$body-font-color: darken( $black, 20% );       //$black; 
+$body-font-color: $black; 
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
