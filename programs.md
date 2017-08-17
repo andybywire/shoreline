@@ -4,57 +4,57 @@ layout: default
 <div class="row img-bg">
   <div class="small-6 column">
     <h1>Success Starts Here</h1>
-    <h3>Shoreline has programs for all stages of life</h3>
+  </div>
+  <div class="small-12 column">
+    <h3>Whether you're setting the foundation for a career, starting a degree that will take you to a university and beyond, or building new skills, Shoreline can help.</h3>
   </div>
 </div>
 
-
-<div class="card" style="width: 300px;">
-  <div class="card-divider">
-    This is a header
+<div class="small-12 column">
+  <div class="card">
+    <img src="https://placehold.it/500x250?text=img">
+    <div class="card-section">
+      <h4>Fields & Industries</h4>
+      <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
+    </div>
   </div>
-  <img src="https://placehold.it/500x100?text=img">
-  <div class="card-section">
-    <h4>This is a card.</h4>
-    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <div class="card">
+    <img src="https://placehold.it/500x250?text=img">
+    <div class="card-section">
+      <h4>Online Programs</h4>
+      <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
+    </div>
   </div>
-</div>
-
-
-<div class="row home-stat">
-  <div class="small-4 column">
-    100+ Transfer and professional / technical areas of study. 
-  </div>
-  <div class="small-4 column">
-    50+ Countries sending international students to Shoreline. 
-  </div>
-  <div class="small-4 column">
-    40+ Scholarships awarded anually.
-  </div>
-</div>
-
-<div class="row img-bg">
-  <div class="small-6 column small-offset-6">
-    <h1>Fully invest in your future</h1>
-    <h3>We help you inside and outside the classroom</h3>
+  <div class="card">
+    <img src="https://placehold.it/500x250?text=img">
+    <div class="card-section">
+      <h4>Certificates</h4>
+      <p>Looking to gain new skills or enhance your resume? Certificates are offers</p>
+    </div>
   </div>
 </div>
 
-<div class="row home-stat">
-  <div class="small-4 column">
-    14.4 million: average amount of financial aid awarded anually 
+<div class="small-12 column">
+  <div class="card">
+    <img src="https://placehold.it/500x250?text=img">
+    <div class="card-section">
+      <h4>Professional & Technical Programs</h4>
+      <p>Learn specialized knowledge and skills to prepare to enter a particular field, or enhance existing skills while already employed.</p>
+    </div>
   </div>
-  <div class="small-4 column">
-    178+ Universities to which our students have transferred 
+  <div class="card">
+    <img src="https://placehold.it/500x250?text=img">
+    <div class="card-section">
+      <h4>Fields & Industries</h4>
+      <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
+    </div>
   </div>
-  <div class="small-4 column">
-    60+ Shows & events in the campus theater each year
+  <div class="card">
+    <img src="https://placehold.it/500x250?text=img">
+    <div class="card-section">
+      <h4>Fields & Industries</h4>
+      <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
+    </div>
   </div>
 </div>
 
-<div class="row img-bg">
-  <div class="small-6 column">
-    <h1>Build a career and community</h1>
-    <h3>Forming partnerships for a healthy human, economic and natural environment</h3>
-  </div>
-</div>

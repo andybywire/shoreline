@@ -16,7 +16,12 @@
 }
 
 .card {
-  img {
-    overflow: hidden;
+  display: block;
+  float: left;
+  width: 275px;
+  margin: 12px;
+  border: solid 1px $light-gray;
+  div {
+    padding: 10px;
   }
 }
