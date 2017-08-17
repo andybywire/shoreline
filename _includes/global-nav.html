@@ -1,18 +1,21 @@
-<div class="title-bar" data-responsive-toggle="global-nav" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">{{ site.title }}</div>
-</div>
-
-
-<div class="top-bar" id="global-nav">
-  <div class="top-bar-left">
-    <ul class="menu" data-dropdown-menu>
-      <li class="menu-text">{{ site.title }}</li>
+<div class="top-bar">
+  <div class="row">
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"><a href="/">{{ site.title }}</a></li>
         {% for nav in site.data.navigation %}
           <li>
             <a href="{{ nav.path }}">{{ nav.label }}</a>
+            {% if nav.sub-nav %}
+            <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+            {% endif %}
           </li>
         {% endfor %}
     </ul>
   </div>
+</div>
 </div>

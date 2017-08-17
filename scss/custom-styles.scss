@@ -1,37 +1,22 @@
-// monochrome wireframe topbar styles
-// ----------------------------------
+// shoreline cc prototype custom styles
+// ------------------------------------
 
-.title-bar a, .top-bar, .top-bar ul, .top-bar a {
-  background-color: $primary-color;
-  color: $white;
-  .menu-text {
-      padding-left: 0;
+.img-bg {
+  background-color: $light-gray;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+
+.home-stat {
+  font-size: 125%;
+  font-weight: 500;
+  div {
+    padding: 0 50px;
   }
 }
 
-.top-bar-left {
-  @include breakpoint(medium) {    //contains topbar items to page width on medium and up screens 
-    @include grid-row();
-    float: none;
+.card {
+  img {
+    overflow: hidden;
   }
-}
-
-.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
-  border-color: $white transparent transparent;
-}
-
-li.menu-text {
-	display: none;
-	@include breakpoint(medium) {
-		display: table-cell;
-	}
-}
-
-ul {
-  //margin-left: 0;
-}
-
-li.menu, li.label:first-child {
-  margin-top: 1rem;
-  margin-left: -1.25rem;
 }

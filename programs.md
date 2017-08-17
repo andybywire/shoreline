@@ -3,10 +3,23 @@ layout: default
 ---
 <div class="row img-bg">
   <div class="small-6 column">
-    <h1>What Type of Student Are You?</h1>
+    <h1>Success Starts Here</h1>
     <h3>Shoreline has programs for all stages of life</h3>
   </div>
 </div>
+
+
+<div class="card" style="width: 300px;">
+  <div class="card-divider">
+    This is a header
+  </div>
+  <img src="https://placehold.it/500x100?text=img">
+  <div class="card-section">
+    <h4>This is a card.</h4>
+    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  </div>
+</div>
+
 
 <div class="row home-stat">
   <div class="small-4 column">
