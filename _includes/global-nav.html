@@ -4,16 +4,19 @@
     <ul class="dropdown menu" data-dropdown-menu>
       <li class="menu-text"><a href="/">{{ site.title }}</a></li>
         {% for nav in site.data.navigation %}
-          <li>
-            <a href="{{ nav.path }}">{{ nav.label }}</a>
-            {% if nav.sub-nav %}
-            <ul class="menu vertical">
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul>
-            {% endif %}
-          </li>
+          {% if nav.label %}
+            <li>
+              <a href="{{ nav.path }}">{{ nav.label }}</a>
+              {% if nav.sub-nav %}
+              <ul class="menu vertical">
+                <li><a href="/fields-industries.html">Fields & Industries</a></li>
+                <li><a href="#" class="inactive">Areas of Study</a></li>
+                <li><a href="#" class="inactive">University Transfer</a></li>
+                <li><a href="#" class="inactive">Professional & Technical</a></li>
+              </ul>
+              {% endif %}
+            </li>
+          {% endif %}
         {% endfor %}
     </ul>
   </div>

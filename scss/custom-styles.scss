@@ -3,15 +3,27 @@
 
 .img-bg {
   background-color: $light-gray;
+  background-size: 100%;
   margin: 50px 0;
   padding: 20px 0;
+  &.img h1, &.img h3 {
+    color: $white;
+  }
 }
 
 .home-stat {
   font-size: 125%;
   font-weight: 500;
   div {
-    padding: 0 50px;
+    padding: 0 25px;
+  }
+  p {
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    background-color: $light-gray;
+    padding:40px;
+    text-align: center;
   }
 }
 
@@ -24,4 +36,8 @@
   div {
     padding: 10px;
   }
+}
+
+.inactive {
+  cursor:not-allowed;
 }

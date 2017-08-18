@@ -34,5 +34,5 @@ markdown: kramdown
 # Page Generator settings
 page_gen:
   - data: 'programs'
-    name: 'page-name'
-    template: 'page'
+    name: 'program'
+    template: 'program'
