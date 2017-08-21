@@ -11,13 +11,39 @@ layout: default
       <ul class="breadcrumbs">
         <li><a href="/">Shoreline Community College</a></li>
         <li><a href="/programs.html">Programs</a></li>
-        <li>Fields & Industries</li>
+        <li>Areas of Study</li>
       </ul>
     </nav>
 
     <h1>Areas of Study</h1>
     <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
 
+
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Areas of Study">
+
+    <table id="areaOfStudy">
+      <tr class="header">
+        <th onclick="sortTable(0)" style="width:45%;">Area of Study</th>
+        <th onclick="sortTable(1)" style="width:25%;">Program</th>
+        <th onclick="sortTable(2)" style="width:15%;">Type</th>
+        <th style="width:15%;">Transfer</th>
+      </tr>
+      {% for area in site.data.planning-guides %}
+      <tr>
+        <td>{{ area.focus}}{{ area.mrp }}{{ area.concentration}}{{ area.pathway }}</td>
+        <td>{{ area.program}}</td>
+        <td>{{ area.credential}}</td>
+        <td>
+            {% if area.articulation == 'transfer' %}
+              Yes
+            {% else %}
+              No
+            {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
 
   </div>
 </div>
