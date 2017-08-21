@@ -41,3 +41,18 @@
 .inactive {
   cursor:not-allowed;
 }
+
+.left-rail {
+  margin-top: 30px;
+  h5 {
+    background-color: $light-gray;
+    padding: 5px 10px;
+  }
+  .is-active {
+    background-color: scale-color($light-gray, $lightness: 60%);
+  }
+}
+
+.breadcrumbs {
+  margin-top: 30px;
+}

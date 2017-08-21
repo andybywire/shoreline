@@ -2,17 +2,18 @@
 layout: default
 ---
 <div class="row">
-  <div class="small-2 columns">
-    <ul>
-      <li><a href="/programs.html">Programs</a></li>
-      <li><a href="/fields-industries.html">Fields & Industries</a></li>
-      <li><a href="#" class="inactive">Areas of Study</a></li>
-      <li><a href="#" class="inactive">University Transfer</a></li>
-      <li><a href="#" class="inactive">Professional & Technical</a></li>
-    </ul>
-  </div>
+  {% include left-rail.html %}
 
   <div class="small-10 columns">
+
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="/">Shoreline Community College</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li>{{ page.title }}</li>
+      </ul>
+    </nav>
+
     <h1>{{ page.program | capitalize }}</h1>
     <p>{{ page.description }}</p>
 

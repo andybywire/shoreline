@@ -2,81 +2,105 @@
 layout: default
 ---
 <div class="row">
-  <div class="small-2 columns">
-    <ul>
-      <li><a href="/programs.html">Programs</a></li>
-      <li><a href="/fields-industries.html">Fields & Industries</a></li>
-      <li><a href="#" class="inactive">Areas of Study</a></li>
-      <li><a href="#" class="inactive">University Transfer</a></li>
-      <li><a href="#" class="inactive">Professional & Technical</a></li>
-    </ul>
-  </div>
+
+  {% include left-rail.html %}
 
   <div class="small-10 columns">
-    <h1>Fields & Industries</h1>
-    <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
 
-    <h3>Advanced Technology</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'advanced technology' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <div class="column row">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="/">Shoreline Community College</a></li>
+          <li><a href="/programs.html">Programs</a></li>
+          <li>Fields & Industries</li>
+        </ul>
+      </nav>
 
-    <h3>Business</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'business' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+      <h1>Fields & Industries</h1>
+      <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
+    </div>
 
-    <h3>Education and Library Sciences</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'education and library sciences' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="small-6 column">
+        <h3>Advanced Technology</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'advanced technology' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="small-6 column">
+        <h3>Business</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'business' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
 
-    <h3>Health and Wellness</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'health and wellness' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="small-6 column">
+        <h3>Education and Library Sciences</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'education and library sciences' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="small-6 column">
+        <h3>Health and Wellness</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'health and wellness' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
 
-    <h3>Humanities</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'humanities' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="small-6 column">
+        <h3>Humanities</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'humanities' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="small-6 column">
+        <h3>Science, Math, and Engineering</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'science, math, and engineering' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
 
-    <h3>Science, Math, and Engineering</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'science, math, and engineering' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="small-6 column">
+        <h3>Social Sciences and Human Services</h3>
+        <ul>
+        {% for program in site.data.programs %}
+          {% if program.industry == 'social sciences and human services' %}
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div> 
+    </div>
 
-    <h3>Social Sciences and Human Services</h3>
-    <ul>
-    {% for program in site.data.programs %}
-      {% if program.industry == 'social sciences and human services' %}
-        <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </div>
-</div>
+  </div> <!-- close column -->
+</div> <!-- close row -->
