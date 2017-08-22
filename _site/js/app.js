@@ -1,9 +1,9 @@
 $(document).foundation();
 
-function myFunction() {
+function areaSearch() {
   // Declare variables 
   var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
+  input = document.getElementById("areaInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("areaOfStudy");
   tr = table.getElementsByTagName("tr");
