@@ -48,7 +48,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="/areas-of-study.html">Areas of Study</a></h4>
-        <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
+        <p>Shoreline offers degrees and certificate in over 150 areas of specialization.</p>
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="/university-transfer.html">University Transfer</a></h4>
-        <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
+        <p>Transfer degrees let you start your bachelor's work here, then transfer directly to a wide range of four year schools.</p>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="/prof-tech.html">Professional & Technical</a></h4>
-        <p>Looking to gain new skills or enhance your resume? Certificates are offers</p>
+        <p>Shoreline's dozens of professional and technical programs offer an ideal way to begin or expand on in-demand careers.</p>
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">Online Programs</a></h4>
-        <p>Shoreline offers programs that cross all areas of study including Arts, Health, Technology, Business, and Social Sciences.</p>
+        <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
       </div>
     </div>
   </div>
@@ -87,7 +87,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">High School</a></h4>
-        <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
+        <p>If you’re not in high school now, you might be able to use Shoreline classes to receive a high school diploma.</p>
       </div>
     </div>
   </div>
@@ -96,7 +96,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">International</a></h4>
-        <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
+        <p>We accept students at all levels of English. Learn more here.</p>
       </div>
     </div>
   </div>
@@ -105,7 +105,7 @@ layout: default
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">Continuing Education</a></h4>
-        <p>Looking to gain new skills or enhance your resume? Certificates are offers</p>
+        <p>One of the fastest growing segments of the labor market is the age 50 and older worker.</p>
       </div>
     </div>
   </div>

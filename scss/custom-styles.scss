@@ -11,6 +11,9 @@
   }
 }
 
+hr {
+  width: 80%
+}
 .home-stat {
   font-size: 125%;
   font-weight: 500;
@@ -57,6 +60,7 @@
   padding:0;
   margin-bottom: 50px;
   .card-inner {
+    height: 350px;
     border: solid 1px $light-gray;
     margin-right: 10px;
     padding: 0;
