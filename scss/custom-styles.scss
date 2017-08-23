@@ -28,14 +28,46 @@
   }
 }
 
-.card {
-  display: block;
-  float: left;
-  width: 275px;
-  margin: 12px;
-  border: solid 1px $light-gray;
+.get-started {
+  margin: 60px;
   div {
-    padding: 10px;
+    padding: 0 75px;
+  }
+  p:first-child {
+    font-size: 250%;
+    font-weight: 500;
+    width: 150px;
+    height: 150px;
+    border-radius: 250px;
+    background-color: $light-gray;
+    padding:40px;
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    margin: 0 -35px 25px;
+  }
+  a.button {
+    display: block;
+    text-align: center;
+  }
+}
+.card {
+  @include grid-column(3);
+  padding:0;
+  margin-bottom: 50px;
+  .card-inner {
+    border: solid 1px $light-gray;
+    margin-right: 10px;
+    padding: 0;
+  }
+  &:last-child {
+    .card-inner {
+      margin-right: 0;
+    }
+  }
+  div{
+    padding: 5px;
   }
 }
 
