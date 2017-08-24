@@ -39,7 +39,7 @@ layout: default
               or guide.credential == "AFA" 
               or guide.credential == "AS-T 1" 
               or guide.credential == "AS-T 2" %}
-          <li><a href="#">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
+          <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -71,7 +71,7 @@ layout: default
     {% for guide in site.data.planning-guides %}
       {% if page.program == guide.program %}
         {% if guide.credential == "AAAS" %} 
-          <li><a href="#">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
+          <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -103,7 +103,7 @@ layout: default
         {% if guide.credential == "CP" 
               or guide.credential == "CC" 
               or guide.credential == "ST" %} 
-          <li><a href="#">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
+          <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}

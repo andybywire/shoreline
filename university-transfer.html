@@ -1,0 +1,81 @@
+---
+layout: default
+title: University Transfer
+---
+<div class="row">
+  {% include left-rail.html %}
+
+  <div class="small-10 columns">
+
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="/">Shoreline Community College</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li>{{ page.title }}</li>
+      </ul>
+    </nav>
+
+    <h1>University Transfer</h1>
+    <p>Transfer degrees are for students who intend to continue their studies at a college or university. If you don't see an area of study you're interested in, contact us. In most cases we can help you prepare for the major of your choice.</p>
+
+    <p>If you're pursuing a bachelor’s degree, consider applying to The Honors College at Shoreline for additional transfer support.</p>
+
+    <div class="row">
+      <div class="small-6 column">
+        <h3>STEM Natural Sciences Transfer</h3>
+        <ul>
+        {% for area in site.data.planning-guides %}
+          {% if area.credential == "AS-T 1" %}
+            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+                                          {{ area.mrp | capitalize }}
+                                          {{ area.concentration | capitalize }}
+                                          {{ area.pathway | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="small-6 column">
+        <h3>STEM Engineering Transfer</h3>
+        <ul>
+        {% for area in site.data.planning-guides %}
+          {% if area.credential == "AS-T 2" %}
+            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+                                          {{ area.mrp | capitalize }}
+                                          {{ area.concentration | capitalize }}
+                                          {{ area.pathway | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-6 column">
+        <h3>Liberal Arts Transfer</h3>
+        <ul>
+        {% for area in site.data.planning-guides %}
+          {% if area.credential == "AA-DTA" %}
+            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+                                          {{ area.mrp | capitalize }}
+                                          {{ area.concentration | capitalize }}
+                                          {{ area.pathway | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="small-6 column">
+        <h3>Specialized Arts Degrees</h3>
+        <ul>
+        {% for area in site.data.planning-guides %}
+          {% if area.credential == "AM"
+             or area.credential == "AFA" %} 
+            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+                                          {{ area.mrp | capitalize }}
+                                          {{ area.concentration | capitalize }}
+                                          {{ area.pathway | capitalize }} </a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+

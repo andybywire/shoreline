@@ -24,15 +24,15 @@ layout: default
 
     <table id="areaOfStudy">
       <tr class="header">
-        <th onclick="sortTable(0)" style="width:45%;">Area of Study <i class="fa fa-sort"></th>
-        <th onclick="sortTable(1)" style="width:25%;">Program <i class="fa fa-sort"></th>
+        <th onclick="sortTable(0)" style="width:40%;">Area of Study <i class="fa fa-sort"></th>
+        <th onclick="sortTable(1)" style="width:30%;">Program <i class="fa fa-sort"></th>
         <th onclick="sortTable(2)" style="width:15%;">Type <i class="fa fa-sort"></th>
         <th onclick="sortTable(3)" style="width:15%;">Transfer <i class="fa fa-sort"></th>
       </tr>
       {% for area in site.data.planning-guides %}
       <tr>
-        <td>{{ area.focus}}{{ area.mrp }}{{ area.concentration}}{{ area.pathway }}</td>
-        <td>{{ area.program}}</td>
+        <td>{{ area.focus}}{{ area.mrp }}{{ area.concentration}}{{ area.pathway }}<a href="{{ area.url }}" target="_blank"> <i class="fa fa-chevron-right"></a></td>
+        <td>{{ area.program}}<a href="/programs/{{ area.program | replace: ' ', '-' }}.html" target="_blank"> <i class="fa fa-chevron-right"></a></td>
         <td>{{ area.credential}}</td>
         <td>
             {% if area.articulation == 'transfer' %}
