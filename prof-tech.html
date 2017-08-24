@@ -1,0 +1,43 @@
+---
+layout: default
+title: Professional and Technical
+---
+<div class="row">
+  {% include left-rail.html %}
+
+  <div class="small-10 columns">
+
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="/">Shoreline Community College</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li>{{ page.title }}</li>
+      </ul>
+    </nav>
+
+    <h1>Professional and Technical</h1>
+    <p>"Professional/Technical" or vocational studies, provide students with specialized knowledge and skills to either prepare them to enter a particular field, or enhance existing skills while already employed. </p>
+    <p>The Workforce Education office assists many students who study these vocational programs. See if you qualify for financial assistance for these programs.</p>
+
+
+      {% for program in site.data.programs %}
+      {% assign mod = forloop.index | modulo: 2 %}
+        {% if mod == 1 %}
+          <div class="row">
+        {% endif %}
+          {% if program.articulation == "prof/tech" %}
+            <div class="small-12 column"> <!-- page layout override -->
+            <h3>{{ program.program | capitalize}}</h3>
+              <ul>
+                {% for guide in site.data.planning-guides %}
+                  {% if guide.program == program.program %}
+                    <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% if mod == 0 %}
+          </div >
+        {% endif %}
+      {% endfor %}
