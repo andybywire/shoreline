@@ -16,7 +16,7 @@ layout: default
     <p>1</p>
     <h5>Find a Program</h5>
     <p>Shoreline has a wide range of programs for virtually every goal. </p>
-    <a href="#" class="button inactive">Learn More</a>
+    <a href="#explore-programs" class="button">Get Started</a>
   </div>
   <div class="small-4 column">
     <p>2</p>
@@ -32,7 +32,7 @@ layout: default
   </div>
 </div>
 
-<div class="row">
+<div class="row" id="explore-programs">
   <h3>Explore Programs</h3>
   <div class="card">
     <div class="card-inner">
