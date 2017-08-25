@@ -26,7 +26,7 @@ title: University Transfer
         <ul>
         {% for area in site.data.planning-guides %}
           {% if area.credential == "AS-T 1" %}
-            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+            <li style="text-transform: capitalize;"><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
                                           {{ area.mrp | capitalize }}
                                           {{ area.concentration | capitalize }}
                                           {{ area.pathway | capitalize }} </a></li>
@@ -39,7 +39,7 @@ title: University Transfer
         <ul>
         {% for area in site.data.planning-guides %}
           {% if area.credential == "AS-T 2" %}
-            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+            <li style="text-transform: capitalize;"><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
                                           {{ area.mrp | capitalize }}
                                           {{ area.concentration | capitalize }}
                                           {{ area.pathway | capitalize }} </a></li>
@@ -55,7 +55,7 @@ title: University Transfer
         <ul>
         {% for area in site.data.planning-guides %}
           {% if area.credential == "AA-DTA" %}
-            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+            <li style="text-transform: capitalize;"><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
                                           {{ area.mrp | capitalize }}
                                           {{ area.concentration | capitalize }}
                                           {{ area.pathway | capitalize }} </a></li>
@@ -69,7 +69,7 @@ title: University Transfer
         {% for area in site.data.planning-guides %}
           {% if area.credential == "AM"
              or area.credential == "AFA" %} 
-            <li><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
+            <li style="text-transform: capitalize;"><a href="{{ area.url }}" target="_blank"> {{ area.focus | capitalize }}
                                           {{ area.mrp | capitalize }}
                                           {{ area.concentration | capitalize }}
                                           {{ area.pathway | capitalize }} </a></li>

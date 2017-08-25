@@ -14,109 +14,122 @@ layout: default
       </ul>
     </nav>
 
-    <h1>{{ page.program | capitalize }}</h1>
+    <h1>{{ page.program | capitalize_all }}</h1>
     <p>{{ page.description }}</p>
 
-    <!-- Transfer forloop -->
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "AA-DTA" 
-          or guide.credential == "AM" 
-          or guide.credential == "AFA" 
-          or guide.credential == "AS-T 1" 
-          or guide.credential == "AS-T 2" %}
-            <h3>University Transfer Degrees</h3>
-            <ul>
-          {% break %}
-        {% endif %}
-      {% endif %}  
-    {% endfor %}  
+    <div class="row">
+      <div class="small-8 column">
+        <!-- Transfer forloop -->
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "AA-DTA" 
+                or guide.credential == "AM" 
+                or guide.credential == "AFA" 
+                or guide.credential == "AS-T 1" 
+                or guide.credential == "AS-T 2" %}
+                  <h3>University Transfer Areas of Study</h3>
+                  <ul>
+                {% break %}
+              {% endif %}
+            {% endif %}  
+          {% endfor %}  
 
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "AA-DTA" 
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "AA-DTA" 
+                    or guide.credential == "AM" 
+                    or guide.credential == "AFA" 
+                    or guide.credential == "AS-T 1" 
+                    or guide.credential == "AS-T 2" %}
+                <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          {% for guide in site.data.planning-guides %}
+          {% if page.program == guide.program %}
+            {% if guide.credential == "AA-DTA" 
               or guide.credential == "AM" 
               or guide.credential == "AFA" 
               or guide.credential == "AS-T 1" 
               or guide.credential == "AS-T 2" %}
-          <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+                </ul>
+              {% break %}
+              {% endif %}
+            {% endif %}  
+          {% endfor %} 
+        <!-- Non-transfer Associate forloop -->
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "AAAS" %}
+                <h3>Non-Transfer Associate Degrees</h3>
+                <ul>
+                {% break %}
+              {% endif %}
+            {% endif %}  
+          {% endfor %} 
 
-    {% for guide in site.data.planning-guides %}
-    {% if page.program == guide.program %}
-      {% if guide.credential == "AA-DTA" 
-        or guide.credential == "AM" 
-        or guide.credential == "AFA" 
-        or guide.credential == "AS-T 1" 
-        or guide.credential == "AS-T 2" %}
-          </ul>
-        {% break %}
-        {% endif %}
-      {% endif %}  
-    {% endfor %} 
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "AAAS" %} 
+                <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
 
-    <!-- Non-transfer Associate forloop -->
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "AAAS" %}
-          <h3>Non-Transfer Associate Degrees</h3>
-          <ul>
-          {% break %}
-        {% endif %}
-      {% endif %}  
-    {% endfor %} 
+          {% for guide in site.data.planning-guides %}
+          {% if page.program == guide.program %}
+            {% if guide.credential == "AAAS" %}
+                </ul>
+              {% break %}
+              {% endif %}
+            {% endif %}  
+          {% endfor %} 
+        <!-- Certificate forloop -->
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "CP" 
+                    or guide.credential == "CC" 
+                    or guide.credential == "ST" %}
+                <h3>Certificates</h3>
+                <ul>
+                {% break %}
+              {% endif %}
+            {% endif %}  
+          {% endfor %} 
 
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "AAAS" %} 
-          <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "CP" 
+                    or guide.credential == "CC" 
+                    or guide.credential == "ST" %} 
+                <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
 
-    {% for guide in site.data.planning-guides %}
-    {% if page.program == guide.program %}
-      {% if guide.credential == "AAAS" %}
-          </ul>
-        {% break %}
-        {% endif %}
-      {% endif %}  
-    {% endfor %} 
-
-    <!-- Certificate forloop -->
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "CP" 
-              or guide.credential == "CC" 
-              or guide.credential == "ST" %}
-          <h3>Certificates</h3>
-          <ul>
-          {% break %}
-        {% endif %}
-      {% endif %}  
-    {% endfor %} 
-
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "CP" 
-              or guide.credential == "CC" 
-              or guide.credential == "ST" %} 
-          <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize }} ({{ guide.credential }})</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-
-    {% for guide in site.data.planning-guides %}
-      {% if page.program == guide.program %}
-        {% if guide.credential == "CP" 
-              or guide.credential == "CC" 
-              or guide.credential == "ST" %}
-          </ul>
-          {% break %}
-        {% endif %}
-      {% endif %}  
-    {% endfor %} 
+          {% for guide in site.data.planning-guides %}
+            {% if page.program == guide.program %}
+              {% if guide.credential == "CP" 
+                    or guide.credential == "CC" 
+                    or guide.credential == "ST" %}
+                </ul>
+                {% break %}
+              {% endif %}
+            {% endif %}  
+          {% endfor %} 
+      </div>
+      <div class="program-cta small-4 column">
+        <h4>Learn More</h4>
+        <p>Get in touch with a Shoreline Advisor to learn more about the {{ page.program }} program, registering, financial ait, and more.</p>  
+        <a class="button primary inactive" href="#">Request Info</a>
+        <h4>Get Started</h4>
+        <p>Your first step is to get a student ID – it's fast, easy, and free.</p>
+        <a class="button primary inactive" href="#">Get a Student ID</a>
+        <h4>Discover Shoreline</h4>
+        <p>With a reservation, a college staff member will take you and your friends and family for a guided tour of campus.</p>
+        <a class="button primary inactive" href="#">Visit Campus</a>
+      </div>
+    </div>
   </div>
 </div>

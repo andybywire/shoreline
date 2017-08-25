@@ -10,7 +10,7 @@ layout: default
   </div>
 </div>
 
-<div class="row get-started">
+<!-- <div class="row get-started">
   <h3>Getting started is easy</h3>
   <div class="small-4 column">
     <p>1</p>
@@ -30,7 +30,7 @@ layout: default
     <p>Once you have your ID, you can start enrolling in classes.</p>
     <a href="#" class="button inactive">Learn More</a>
   </div>
-</div>
+</div> -->
 
 <div class="row" id="explore-programs">
   <h3>Explore Programs</h3>

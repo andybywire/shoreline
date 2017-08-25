@@ -26,7 +26,7 @@ layout: default
         <ul>
         {% for program in site.data.programs %}
           {% if program.industry == 'advanced technology' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -36,7 +36,7 @@ layout: default
         <ul>
         {% for program in site.data.programs %}
           {% if program.industry == 'business' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -49,7 +49,7 @@ layout: default
         <ul>
         {% for program in site.data.programs %}
           {% if program.industry == 'education and library sciences' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -59,7 +59,7 @@ layout: default
         <ul>
         {% for program in site.data.programs %}
           {% if program.industry == 'health and wellness' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -72,7 +72,7 @@ layout: default
         <ul>
         {% for program in site.data.programs %}
           {% if program.industry == 'humanities' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -81,8 +81,8 @@ layout: default
         <h3>Science, Math, and Engineering</h3>
         <ul>
         {% for program in site.data.programs %}
-          {% if program.industry == 'science, math, and engineering' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+          {% if program.industry == 'science, math, and engineering' %} 
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -95,7 +95,7 @@ layout: default
         <ul>
         {% for program in site.data.programs %}
           {% if program.industry == 'social sciences and human services' %}
-            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize }} </a></li>
+            <li><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }} </a></li>
           {% endif %}
         {% endfor %}
         </ul>

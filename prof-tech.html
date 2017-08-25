@@ -27,11 +27,11 @@ title: Professional and Technical
         {% endif %}
           {% if program.articulation == "prof/tech" %}
             <div class="small-12 column"> <!-- page layout override -->
-            <h3>{{ program.program | capitalize}}</h3>
+            <h3><a href="/programs/{{ program.program | replace: ' ', '-' }}.html">{{ program.program | capitalize_all }}</a></h3>
               <ul>
                 {% for guide in site.data.planning-guides %}
                   {% if guide.program == program.program %}
-                    <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name }}</a></li>
+                    <li><a href="{{ guide.url }}" target="_blank">{{ guide.page-name | capitalize_all }}</a></li>
                   {% endif %}
                 {% endfor %}
               </ul>

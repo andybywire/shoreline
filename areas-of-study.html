@@ -31,8 +31,8 @@ layout: default
       </tr>
       {% for area in site.data.planning-guides %}
       <tr>
-        <td><a href="{{ area.url }}" target="_blank">{{ area.focus}}{{ area.mrp }}{{ area.concentration}}{{ area.pathway }}</a></td>
-        <td><a href="/programs/{{ area.program | replace: ' ', '-' }}.html">{{ area.program}}</a></td>
+        <td style="text-transform: capitalize;"><a href="{{ area.url }}" target="_blank">{{ area.focus }}{{ area.mrp }}{{ area.concentration }}{{ area.pathway }}</a></td>
+        <td><a href="/programs/{{ area.program | replace: ' ', '-' }}.html">{{ area.program | capitalize_all }}</a></td>
         <td>{{ area.credential}}</td>
         <td>
             {% if area.articulation == 'transfer' %}

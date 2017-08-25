@@ -6,7 +6,7 @@
         {% for nav in site.data.navigation %}
           {% if nav.label %}
             <li>
-              <a href="{{ nav.path }}">{{ nav.label }}</a>
+              <a href="{{ nav.path }}" class="{{ nav.notes }}">{{ nav.label }}</a>
               {% if nav.sub-nav %}
               <ul class="menu vertical">
                 <li><a href="/fields-industries.html">Fields & Industries</a></li>
