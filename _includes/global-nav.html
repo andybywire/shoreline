@@ -1,8 +1,7 @@
 <div class="top-bar">
-  <div class="row">
-  <div class="top-bar-right">
+  <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text"><a href="/">{{ site.title }}</a></li>
+      <li class=""><a href="/">{{ site.title }}</a></li>
         {% for nav in site.data.navigation %}
           {% if nav.label %}
             <li>
@@ -25,5 +24,4 @@
         {% endfor %}
     </ul>
   </div>
-</div>
 </div>
