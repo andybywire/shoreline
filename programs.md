@@ -32,28 +32,33 @@ layout: default
   </div>
 </div> -->
 
+
+
 <div class="row" id="explore-programs">
-  <h3>Explore Programs</h3>
-  <div class="card">
-    <div class="card-inner">
+  <div class="small-12 column">
+    <h3>Explore Programs</h3>
+  </div>
+   
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href=""><a href="/fields-industries.html">Fields & Industries</a></a></h4>
         <p>Shoreline offers a broad range of programs across the arts, sciences, technology, business, and more.</p>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-inner">
+   </div> 
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="/areas-of-study.html">Areas of Study</a></h4>
-        <p>Shoreline offers degrees and certificate in over 150 areas of specialization.</p>
+         <p>Shoreline offers degrees and certificate in over 150 areas of specialization.</p>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-inner">
+   </div>
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="/university-transfer.html">University Transfer</a></h4>
@@ -61,8 +66,8 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-inner">
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="/prof-tech.html">Professional & Technical</a></h4>
@@ -72,27 +77,27 @@ layout: default
   </div>
 </div>
 
-<div class="row">
-  <div class="card">
-    <div class="card-inner">
+<div class="row" id="explore-programs"> 
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">Online Programs</a></h4>
         <p>Do you want to do all your classes online? We offer over 50 online programs.</p>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-inner">
+   </div> 
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">High School</a></h4>
         <p>If you’re not in high school now, you might be able to use Shoreline classes to receive a high school diploma.</p>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-inner">
+   </div>
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">International</a></h4>
@@ -100,8 +105,8 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-inner">
+  <div class="column">
+    <div class="card" style="width: 225px;">
       <img src="https://placehold.it/500x250?text=img">
       <div class="card-section">
         <h4><a href="#" class="inactive">Continuing Education</a></h4>

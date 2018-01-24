@@ -55,7 +55,10 @@ hr {
     text-align: center;
   }
 }
-.card {
+
+// custom card styles
+
+/*.card {
   @include grid-column(3);
   padding:0;
   margin-bottom: 50px;
@@ -73,7 +76,7 @@ hr {
   div{
     padding: 5px;
   }
-}
+}*/
 
 .inactive {
   cursor:not-allowed;
