@@ -1,3 +1,20 @@
+
+// prevent FOUC on foundation responsive menu
+//-------------------------------------------
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
 // shoreline cc prototype custom styles
 // ------------------------------------
 
