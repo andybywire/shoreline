@@ -1,18 +1,11 @@
   <div class="small-2 columns">
     <ul class="left-rail vertical menu">
       <li><h5>Programs</h5></li>
-      <li {% if page.url == "/fields-industries.html" %} class="is-active" {% endif %}>
-        <a href="/fields-industries.html">Fields & Industries</a>
-      </li>
-      <li {% if page.url == "/areas-of-study.html" %} class="is-active" {% endif %}>
-        <a href="/areas-of-study.html" >Areas of Study</a>
-      </li>
-      <li {% if page.url == "/university-transfer.html" %} class="is-active" {% endif %}><a href="/university-transfer.html">University Transfer</a></li>
-      <li {% if page.url == "/prof-tech.html" %} class="is-active" {% endif %}><a href="/prof-tech.html">Professional & Technical</a></li>
-      <hr>
-      <li><a href="#" class="inactive">Online Programs</a></li>
-      <li><a href="#" class="inactive">High School</a></li>
-      <li><a href="#" class="inactive">International</a></li>
-      <li><a href="#" class="inactive">Continuing Education</a></li>
-    </ul>
+      {% for secondary in site.data.navigation %}
+        {% if secondary.secondary == "programs" %}
+          <li {% if page.url == secondary.path-2 %} class="is-active" {% endif %}>
+            <a href="{{ secondary.path-2 }}">{{ secondary.label-2 }}</a>
+          </li>   
+        {% endif %}
+      {% endfor%}
   </div>
