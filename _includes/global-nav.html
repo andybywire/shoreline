@@ -8,27 +8,91 @@
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
       <li><a href="/" id="site-title">{{ site.title }}</a></li>
+
       {% for nav in site.data.navigation %}
-      {% if nav.label %}
-      <li>
-        <a href="{{ nav.path }}" class="{{ nav.notes }}">{{ nav.label }}</a>
-        {% if nav.sub-nav %}
-        <ul class="menu">
-          <li><a href="/fields-industries.html">Fields & Industries</a></li>
-          <li><a href="/areas-of-study.html">Areas of Study</a></li>
-          <li><a href="/university-transfer.html">University Transfer</a></li>
-          <li><a href="/prof-tech.html">Professional & Technical</a></li>
-          <hr>
-          <li><a href="#" class="inactive">Online Programs</a></li>
-          <li><a href="#" class="inactive">High School</a></li>
-          <li><a href="#" class="inactive">International</a></li>
-          <li><a href="#" class="inactive">Continuing Education</a></li>
-        </ul>
-        {% endif %}
-      </li>
-      {% endif %}
+        {% if nav.label != previous %}
+        <li>
+          <a href="{{ nav.path }}" class="{{ nav.class }}">{{ nav.label }}</a>
+          {% if nav.sub-nav %}
+
+            {% for subnav in site.data.navigation %}   
+
+              {% if forloop.first %}<ul class="menu vertical">{% endif %}
+              {% if subnav.label-2 and subnav.label == nav.label %}
+                <li>
+                  <a href="{{ subnav.path-2 }}" class="{{ subnav.class }}">{{ subnav.label-2 }}</a>
+                </li>
+              {% endif %}
+              {% if forloop.last %}</ul>{% endif %}
+
+            {% endfor %}
+
+          {% endif %}
+        </li>
+        {% endif %}    
+      {% assign previous = nav.label %} 
       {% endfor %}
     </ul>
   </div>
   </div>
 </div>
+
+
+
+
+{% comment %}
+
+
+
+        {% endif %}
+
+        {% if nav.label == previous %}   
+        <ul class="menu vertical">
+          {% for subnav in site.data.navigation %}          
+
+            
+
+              {% if nav.label == previous and subnav.label-2 != sub-previous %}
+                <li>
+                  <a href="{{ subnav.path-2 }}">{{ subnav.label-2 }}</a>
+                </il>
+              {% endif %}
+            
+
+            
+            {% assign sub-previous = subnav.label-2 %}
+
+          {% endfor %}
+        </ul>
+
+        {% endif %}
+        {% if nav.label != previous %}</li>{% endif %}
+
+      {% assign previous = nav.label %}
+
+
+<div class="top-bar" id="example-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li>
+        <a href="#">One</a>
+        <ul class="menu vertical">
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>
+
+{% endcomment %}
