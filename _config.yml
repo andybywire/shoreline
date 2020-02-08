@@ -37,3 +37,4 @@ page_gen:
   - data: 'programs'
     name: 'program'
     template: 'program'
+theme: jekyll-theme-minimal
